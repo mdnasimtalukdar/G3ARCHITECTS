@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+/* === This part of code is for font === */
+
+/* === Common CSS start Here === */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --color__yellow: #ff900e;
+  --color__dark: #131313;
+  --color__black: #424242;
+  --color__gray: #727272;
+  --transition: all 400ms ease
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #f7f5f5;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color__dark);
+}
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: var(--color__gray);
+}
+.btn {
+    display: inline-block;
+    padding: 2rem 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #FFF;
+    background: var(--color__yellow);
+    border-radius: 1rem;
+}
+/* === Common CSS End Here === */
+
+
+/* === Nav Css Start Here === */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 5rem 0rem;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__container > a {
+    font-size: 4.5rem;
+    color: var(--color__dark);
+    font-weight: 700;
+    letter-spacing: .2rem;
+    
+}
+.nav__container > a:hover .logo {
+    color: var(--color__yellow);
+    transition: var(--transition);
+}
+.nav__container .menu {
+    display: flex;
+    column-gap: 8.5rem;
+}
+.nav__container .menu li > a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: var(--color__black);
+}
+.nav__container .menu li:hover a {
+    color: var(--color__yellow);
+    transition: var(--transition);
+}
+/* === Nav Css End Here === */
+/* === Banner Start here === */
+.banner {
+    margin-top: 10rem;
+}
+.banner .banner__container .banner__info {
+    text-align: center;
+}
+.banner .banner__container .banner__info h1 {
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: var(--color__dark);
+}
+.banner .banner__container .banner__info p {
+    margin: 3.2rem 27.1rem;
+}
+.banner .banner__container .banner__info a {
+    margin-bottom: 5rem;
+}
+.banner .banner__container .banner__info a:hover {
+    color: var(--color__yellow);
+    background: var(--color__dark);
+    transition: var(--transition);
+}
+.hyellow {
+    color: var(--color__yellow);
+}
+/* === Banner End here === */
