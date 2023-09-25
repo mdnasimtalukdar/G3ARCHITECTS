@@ -21,7 +21,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
-  background: #f7f5f5;
+  /* background: #f7f5f5; */
 }
 .container {
   max-width: 144rem;
@@ -113,6 +113,78 @@ header {
   color: var(--color__yellow);
 }
 /* === Banner End here === */
+/* === Feature Start here === */
+.feature {
+    margin: 10rem 0rem;
+}
+.feature__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+    align-items: center;
+}
+.feature__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+.feature__image {
+    overflow: hidden;
+    box-shadow: 2px 10px 24px -3px rgba(0,0,0,0.74);
+-webkit-box-shadow: 2px 10px 24px -3px rgba(0,0,0,0.74);
+-moz-box-shadow: 2px 10px 24px -3px rgba(0,0,0,0.74);
+    
+}
+.feature__image img {
+    transition: var(--transition);
+    transform: scale(1.02);
+}
+.feature__image:hover img{
+    transform: scale(1.2);
+}
+.feature__info h3 {
+    margin-right: 9.8rem;
+}
+.feature__info .graythin {
+    font-weight: 500;
+    color: var(--color__gray);
+}
+.feature__info .thickyellow {
+    color: var(--color__yellow);
+}
+.feature__info p {
+    margin: 3rem 12.4rem 3rem 0;
+}
+.feature__info a:hover {
+    color: var(--color__yellow);
+    background: var(--color__dark);
+    transition: var(--transition);
+}
+/* === Feature End here === */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* === This part of code is for responsive === */
 /* === For small device === */
@@ -148,6 +220,30 @@ header {
   .banner {
     margin-top: 4rem;
   }
+  /* === Feature Start === */
+  .feature {
+    margin: 5rem 0rem;
+}
+  .feature__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature__images {
+    grid-template-columns: 1fr;
+    order: 1;
+    width: 90vw;
+    margin-top: 5rem;
+  }
+  .feature__images img {
+    width: 100%;
+  }
+  .feature__info h3 {
+    font-size: 30px;
+    margin-right: 0;
+}
+.feature__info p {
+    margin-right: 0;
+}
+  /* === Feature End === */
 }
 /* === For small device === */
 /* === For Medium Device === */
@@ -173,6 +269,30 @@ header {
     .banner .banner__container .banner__info p {
         margin: 3.2rem 1.1rem;
     }
+    /* === Feature Start === */
+    .feature {
+        margin: 5rem 0rem;
+    }
+      .feature__container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .feature__images {
+        grid-template-columns: 1fr 1fr;
+        order: 1;
+        width: 90vw;
+        margin-top: 5rem;
+      }
+      .feature__images img {
+        width: 100%;
+      }
+      .feature__info h3 {
+        font-size: 30px;
+        margin-right: 0;
+    }
+    .feature__info p {
+        margin-right: 0;
+    }
+    /* === Feature End === */
 }
 @media screen and (min-width:768px) and (max-width:1400px) {
     .container {
@@ -195,6 +315,28 @@ header {
     }
     .banner .banner__container .banner__info p {
         margin: 3.2rem 1.1rem;
+    }
+    .feature {
+        margin: 5rem 0rem;
+    }
+      .feature__container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .feature__images {
+        grid-template-columns: 1fr 1fr;
+        order: 1;
+        width: 90vw;
+        margin-top: 5rem;
+      }
+      .feature__images img {
+        width: 100%;
+      }
+      .feature__info h3 {
+        font-size: 30px;
+        margin-right: 0;
+    }
+    .feature__info p {
+        margin-right: 0;
     }
 }
 /* === For Medium Device === */
