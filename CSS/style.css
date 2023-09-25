@@ -17,7 +17,7 @@
   --color__dark: #131313;
   --color__black: #424242;
   --color__gray: #727272;
-  --transition: all 400ms ease
+  --transition: all 400ms ease;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -28,129 +28,173 @@ body {
   margin: 0 auto;
 }
 h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: normal;
-    color: var(--color__dark);
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color__dark);
 }
 p {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.6rem;
-    color: var(--color__gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--color__gray);
 }
 .btn {
-    display: inline-block;
-    padding: 2rem 2.5rem;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    color: #FFF;
-    background: var(--color__yellow);
-    border-radius: 1rem;
+  display: inline-block;
+  padding: 2rem 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: var(--color__yellow);
+  border-radius: 1rem;
 }
 /* === Common CSS End Here === */
 
-
 /* === Nav Css Start Here === */
 header {
-    background: rgba(255, 144, 14, 0.10);
-    padding: 5rem 0rem;
+  background: rgba(255, 144, 14, 0.1);
+  padding: 5rem 0rem;
 }
 .nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav__container > a {
-    font-size: 4.5rem;
-    color: var(--color__dark);
-    font-weight: 700;
-    letter-spacing: .2rem;
-    
+  font-size: 4.5rem;
+  color: var(--color__dark);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
 }
 .nav__container > a:hover .logo {
-    color: var(--color__yellow);
-    transition: var(--transition);
+  color: var(--color__yellow);
+  transition: var(--transition);
 }
 .nav__container .menu {
-    display: flex;
-    column-gap: 8.5rem;
+  display: flex;
+  column-gap: 8.5rem;
 }
 .nav__container .menu li > a {
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.6rem;
-    color: var(--color__black);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  color: var(--color__black);
 }
 .nav__container .menu li:hover a {
-    color: var(--color__yellow);
-    transition: var(--transition);
+  color: var(--color__yellow);
+  transition: var(--transition);
 }
 /* === Nav Css End Here === */
 /* === Banner Start here === */
 .banner {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 .banner .banner__container .banner__info {
-    text-align: center;
+  text-align: center;
 }
 .banner .banner__container .banner__info h1 {
-    font-size: 6.4rem;
-    font-weight: 700;
-    color: var(--color__dark);
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--color__dark);
 }
 .banner .banner__container .banner__info p {
-    margin: 3.2rem 27.1rem;
+  margin: 3.2rem 27.1rem;
 }
 .banner .banner__container .banner__info a {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 .banner .banner__container .banner__info a:hover {
-    color: var(--color__yellow);
-    background: var(--color__dark);
-    transition: var(--transition);
+  color: var(--color__yellow);
+  background: var(--color__dark);
+  transition: var(--transition);
 }
 .hyellow {
-    color: var(--color__yellow);
+  color: var(--color__yellow);
 }
 /* === Banner End here === */
 
 /* === This part of code is for responsive === */
 /* === For small device === */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  .banner__img {
+    width: 90vw;
+  }
+  .banner__img img {
+    width: 100%;
+  }
+  .nav__container {
+    flex-direction: column;
+  }
+  .nav__container > a {
+    font-size: 2rem;
+  }
+  .nav__container .menu {
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .nav__container .menu li > a {
+    font-size: 1.5rem;
+  }
+  .banner .banner__container .banner__info h1 {
+    font-size: 2.5rem;
+  }
+  .banner .banner__container .banner__info p {
+    margin: 3.2rem 1.1rem;
+  }
+  .banner {
+    margin-top: 4rem;
+  }
+}
+/* === For small device === */
+/* === For Medium Device === */
+@media screen and (min-width:576px) and (max-width:768px) {
     .container {
         width: 90%;
     }
-
     .banner__img {
         width: 90vw;
-    }
-    .banner__img img {
+      }
+      .banner__img img {
         width: 100%;
-    }
-    .nav__container {
-        flex-direction: column;
-    }
-    .nav__container > a {
-        font-size: 2rem;
+      }
+      .nav__container > a {
+        font-size: 2.5rem;
     }
     .nav__container .menu {
-        column-gap: 1rem;
-        justify-content: center;
+        column-gap: 2.5rem;
     }
-    
-.nav__container .menu li > a {
-    font-size: 1.5rem;
+    .banner .banner__container .banner__info h1 {
+        font-size: 5.4rem;
+    }
+    .banner .banner__container .banner__info p {
+        margin: 3.2rem 1.1rem;
+    }
 }
-.banner .banner__container .banner__info h1 {
-    font-size: 2.5rem;
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .container {
+        width: 90%;
+    }
+    .banner__img {
+        width: 90vw;
+      }
+      .banner__img img {
+        width: 100%;
+      }
+      .nav__container > a {
+        font-size: 2.5rem;
+    }
+    .nav__container .menu {
+        column-gap: 5.5rem;
+    }
+    .banner .banner__container .banner__info h1 {
+        font-size: 5.4rem;
+    }
+    .banner .banner__container .banner__info p {
+        margin: 3.2rem 1.1rem;
+    }
 }
-.banner .banner__container .banner__info p {
-    margin: 3.2rem 1.1rem;
-}
-.banner {
-    margin-top: 4rem;
-}
-}
-/* === For small device === */
+/* === For Medium Device === */
