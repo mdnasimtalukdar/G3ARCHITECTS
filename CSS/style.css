@@ -161,6 +161,74 @@ header {
     transition: var(--transition);
 }
 /* === Feature End here === */
+/* === Experience Start here === */
+.experience {
+  margin-bottom: 10rem;
+}
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15rem;
+}
+.left__content__heading h3 {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 8rem;
+}
+.left__content__heading h3::before {
+  content: "";
+  top: 0;
+  left: -1.8rem;
+  height: 10rem;
+  width: .5rem;
+  position: absolute;
+  background: var(--color__yellow);
+}
+.left__content__heading p {
+  margin-top: 2.4rem;
+  margin-bottom: 3rem;
+}
+.experience__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+.experience__items .experience__item {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+}
+.experience__items .experience__item h4 {
+  font-size: 2rem;
+  color: var(--color__yellow);
+  font-weight: 600;
+}
+.experience__image {
+  position: relative;
+}
+.experience__image h3 {
+  position: absolute;
+  bottom: .2rem;
+  left: -9.2rem;
+  max-width: 34rem;
+  background: var(--color__yellow);
+  text-align: center;
+  color: #FFF;
+  padding: 4.5rem;
+  font-size: 6.5rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+.experience__image .experience__small {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.experience__image:hover h3 {
+  background: var(--color__dark);
+  color: var(--color__yellow);
+}
+/* === Experience End here === */
 
 
 
@@ -244,6 +312,39 @@ header {
     margin-right: 0;
 }
   /* === Feature End === */
+  /* === Experience Start === */
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+  .experience__items,.left__content__heading, .experience__image {
+    width: 90vw;
+  }
+  .experience__image {
+    margin-top: 5rem;
+  }
+  .experience__image img {
+    width: 100%;
+  }
+  .experience__image h3 {
+    width: 20rem;
+    left: -1.4rem;
+    bottom: -4.4rem;
+    padding: 2.5rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .experience__image .experience__small {
+    font-size: 1.6rem;
+  }
+  .left__content__heading h3 {
+    font-size: 3.5rem;
+    margin-right: 0;
+  }
+  .left__content__heading h3::before {
+    height: 8rem;
+  }
+  /* === Experience End === */
 }
 /* === For small device === */
 /* === For Medium Device === */
@@ -293,6 +394,29 @@ header {
         margin-right: 0;
     }
     /* === Feature End === */
+    /* === Experience Start === */
+    .experience__container {
+      grid-template-columns: 1fr;
+    }
+    .experience__items,.left__content__heading, .experience__image {
+      width: 90vw;
+    }
+    .experience__image {
+      margin-top: 5rem;
+    }
+    .experience__image img {
+      width: 100%;
+    }
+    .experience__image h3 {
+      width: 20rem;
+      left: -3rem;
+      bottom: -4.4rem;
+      padding: 2.5rem;
+      line-height: 2rem;
+      text-align: center;
+      font-size: 3rem;
+    }
+    /* === Experience End === */
 }
 @media screen and (min-width:768px) and (max-width:1400px) {
     .container {
@@ -320,12 +444,11 @@ header {
         margin: 5rem 0rem;
     }
       .feature__container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
       .feature__images {
         grid-template-columns: 1fr 1fr;
         order: 1;
-        width: 90vw;
         margin-top: 5rem;
       }
       .feature__images img {
@@ -338,5 +461,36 @@ header {
     .feature__info p {
         margin-right: 0;
     }
+    /* === Experience Start === */
+    .experience {
+      margin-top: 10rem;
+    }
+    .experience__container {
+      grid-template-columns: 1fr;
+    }
+    .experience__items,.left__content__heading, .experience__image {
+      width: 90vw;
+    }
+    .experience__image {
+      margin-top: 5rem;
+    }
+    .experience__image img {
+      width: 100%;
+    }
+    .experience__items {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+    }
+    
+.left__content__heading h3 {
+margin-right: 25rem;
+}
+.experience__image h3 {
+  font-size: 4.5rem;
+  padding: 2.5rem;
+  left: -3.2rem;
+  bottom: -7.8rem;
+}
+    /* === Experience End === */
 }
 /* === For Medium Device === */
