@@ -229,30 +229,35 @@ header {
   color: var(--color__yellow);
 }
 /* === Experience End here === */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* === Facts Start === */
+.facts {
+  margin-bottom: 18rem;
+}
+.facts__heading p {
+  margin-right: 87.1rem;
+  margin-top: 2.4rem;
+  margin-bottom: 8rem;
+}
+.facts__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12.5rem;
+  padding: 0 4rem;
+}
+.facts__container .fact {
+  text-align: center;
+  padding: 5rem 3.6rem;
+  border: 1px solid var(--color__yellow);
+}
+.facts__container .fact h3 {
+  margin: 1rem 0;
+}
+.facts__container .fact small {
+  font-size: 2rem;
+  color: var(--color__gray);
+  font-weight: 600;
+}
+/* === Facts End === */
 
 /* === This part of code is for responsive === */
 /* === For small device === */
@@ -345,8 +350,24 @@ header {
     height: 8rem;
   }
   /* === Experience End === */
+  /* === Facts Start === */
+  .facts {
+    margin-bottom: 10rem;
+  }
+  .facts__heading p {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+  .facts__container {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  /* === Facts End === */
 }
 /* === For small device === */
+
+
+
 /* === For Medium Device === */
 @media screen and (min-width:576px) and (max-width:768px) {
     .container {
@@ -417,6 +438,15 @@ header {
       font-size: 3rem;
     }
     /* === Experience End === */
+    /* === Fact Start === */
+    .facts__heading p {
+      margin-right: 2rem;
+    }
+    .facts__container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+    }
+    /* === Fact End === */
 }
 @media screen and (min-width:768px) and (max-width:1400px) {
     .container {
@@ -490,6 +520,16 @@ margin-right: 25rem;
   padding: 2.5rem;
   left: -3.2rem;
   bottom: -7.8rem;
+}
+.facts {
+  margin-top: 20rem;
+}
+.facts__heading p {
+  margin-right: 30rem;
+}
+.facts__container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
 }
     /* === Experience End === */
 }
